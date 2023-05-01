@@ -1,0 +1,199 @@
+body {
+    background: #E5E5E5;
+}
+
+#LogoAlura {
+    margin: 20px;
+    height: 48px;
+    width: 120px;
+    position: relatve;
+
+}
+
+/*Contenedor*/
+.inicio {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.insertArea {
+    display: grid;
+    grid-template-rows: 85% 15%;
+}
+
+.contenedorText {
+    margin: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+.textAll {
+    width: 95%;
+    height: 90%;
+    margin: 20px;
+    font-family: 'Inter';
+    font-size: 32px;
+    background-color: transparent;
+}
+
+.textareaEncript {
+    background-color: blue;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    background: white;
+    border-radius: 20px;
+    width: auto;
+    height: 550px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.textareaEncript .dollImage {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.textareaEncript .textImage {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.buttons button {
+    margin-bottom: 20px;
+    height: 57px;
+    border-radius: 40px;
+    border: 1px solid #0A3871;
+
+}
+
+.buttons .btn-1 {
+    background: #0A3871;
+    margin-left: 150px;
+    color: white;
+    margin-right: 10px;
+}
+
+.buttons .btn-2 {
+    margin-right: 150px;
+    color: #0A3871;
+}
+
+.buttons button p {
+    padding: auto;
+    font-size: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.buttons .btn-1:hover {
+    border-color: white;
+}
+
+.buttons .btn-1:hover p {
+    font-size: 17px;
+}
+
+.buttons .btn-2:hover {
+    border-color: white;
+}
+
+.buttons .btn-2:hover p {
+    font-size: 17px;
+}
+
+.textEncript {
+
+    width: 90%;
+    height: 420px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 20px;
+
+    color: #495057; 
+
+    
+}
+
+.btn-copy {
+
+    gap: 8px;
+    text-align: center;
+
+    display: block;
+
+    width: 70%;
+    height: 57px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border: 1px solid #0A3871;
+    border-radius: 40px;
+    color: #0A3871;
+    font-size: 15px;
+}
+
+.btn-copy:hover {
+    font-size: 17px;
+    border-color: white;
+}
+
+@media (max-width: 769px) {
+    .inicio {
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+
+    }
+    .insertArea {
+        height: 650px;
+    }
+    .textareaEncript .dollImage {
+        display: none;
+    }
+    .textareaEncript {
+        margin-top: 80px;
+        height: auto;
+        padding: 20px;
+    }
+    .textareaEncript .textImage {
+        margin: auto;
+        display: block;
+    }
+    .contenedorText {
+        height: 100%;
+    }
+    .buttons {
+        margin-top: 80px;
+    }
+    .textEncript {
+        margin: 20px; 
+        float: left; 
+        width: 90%; 
+        max-height: 10px;
+        min-height: 170px; 
+        outline: none; 
+        resize: none; 
+        border: 1px solid grey;
+        height: auto; 
+    }
+    .buttons .btn-1 {
+        margin-left: 20px;
+    }
+    .buttons .btn-2 {
+        margin-right: 20px;
+    }
+
+
+
+
+}
